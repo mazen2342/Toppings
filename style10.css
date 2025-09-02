@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+}
+h1{
+    background-color: green;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+.a-container{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    text-align: center;
+}
+.a-container p{
+    padding: 20px;
+    background: linear-gradient(green ,yellow, blue);
+    color: black;
+    margin-right:auto ;
+    font-size: 50px;
+}
+
+.a-container img{
+width: 250px;
+height: 250px;
+margin: auto;
+padding-bottom: 20px;
+animation: rotate 3s ease infinite alternate;
+
+}
+@keyframes rotate{
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+@media (max-width: 750px)
+{
+.a-container{
+    display: flex;
+}
+}
